@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff3019+0,cf0404+100;Red+3D */
+  background: rgb(255,48,25); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(255,48,25,1) 0%, rgba(173,3,3,1) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,48,25,1) 0%,rgb(173, 3, 3) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  rgba(255,48,25,1) 0%,rgba(173,3,3,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+   text-align: center;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .nav-container {
+    display: flex;
+    background-image: radial-gradient(circle at -16.45% 25.82%, #ffff38 0, #fffc26 16.67%, #ffdb17 33.33%, #edb90c 50%, #d69807 66.67%, #c17c08 83.33%, #ae640b 100%);;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 10px 5px 5px rgba(77, 77, 77, 0.5);
+    font-family: 'Press Start 2P', cursive;
   }
-  to {
-    transform: rotate(360deg);
+  
+  nav img {
+    max-height: 50px;
+    padding: 5px;
+    margin: 5px 20px 5px 0;
+    display: inline-block;
+    vertical-align: middle;
   }
-}
+  
+  
+  .gif {
+    max-height: 300px;
+    justify-self: right;
+  }
+  
+  
+  nav h1 {
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  nav img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(77, 77, 77, 0.2);
+  }
+  
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: sticky;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: 15px;
+    padding: 1rem;
+    text-align: center;
+    background-color: black;
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  
+  
+  footer img {
+    display: inline-block;
+    vertical-align: middle;
+  }

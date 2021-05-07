@@ -1,0 +1,117 @@
+.homescreen {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 75px;
+    font-family: 'Concert One', cursive;
+    text-shadow: 0 1rem 2rem rgba(58, 58, 58, 0.5);
+}
+
+
+
+.screen-logo img {
+    margin: 20px;
+    margin-bottom: 75px;
+    margin-top: 50px;
+    height: 100px;
+}
+
+
+.homescreen button {
+    align-self: flex-end;
+    margin-bottom: 163px;
+    font-size: 50px;
+    border-radius: 15px;
+    background: transparent;
+    border: none;
+    color: white;
+    box-sizing: border-box;
+    width: fit-content;
+    font-family: 'Concert One', cursive;
+    text-shadow: 0 1rem 2rem rgba(58, 58, 58, 0.5);
+}
+
+
+Link {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+@keyframes moveLeft{
+    0%{ transform: translate(-10, 0);
+        opacity: 0;
+    }
+    80%{ transform: translate(-2rem, 0);
+         opacity: 1;
+         
+    }
+    100%{ transform: translate(0, 0);
+    }
+}
+
+
+@keyframes moveRight {
+    0%{ transform: translateX(10);
+        opacity: 0;
+    }
+    80%{ transform: translateX(2rem);
+         
+    }
+    100%{ transform: translate(0);
+          opacity: 1;
+    }
+}
+
+
+@keyframes moveBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem); 
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0); 
+    }
+
+}
+
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+.homescreen button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgb(255, 255, 255);
+}
+
+
+.homescreen button:active {
+    transform: translateY(5px);
+}
+
+
+.homescreen h1 {
+    color: white;
+    margin-top: 0;
+    animation: moveBottom 2s ease-out;
+}
+
+
+#mario {
+    animation: moveLeft 2s ease-out,
+               rotate 3s linear 3s infinite;
+}
+
+
+#amiibo-logo {
+    animation: moveRight 2s ease-out;
+}
