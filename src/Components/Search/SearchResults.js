@@ -21,8 +21,8 @@ export default function SearchResults({ amiibos, handleChange, handleSubmit, sea
     if (amiibos === undefined) {
         return (
             <div>
-                <h1 className="error">No Amiibos Found!</h1>
                 <Search/>
+                <h1 className="error">No Amiibos Found!</h1>
                 <img src="/Logo/undefined.png" height="417px" onLoad={startOhno} />
             </div>
         ) 
